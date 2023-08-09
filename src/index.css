@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=B612:wght@400;700&family=Cairo:wght@200;300;400;500&family=Crimson+Text:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'B612', sans-serif;
+}
+
+.App {
+  position: absolute;
+  width: 960px;
+  margin: 0 auto;
+
+  text-align: center;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 930px) and (min-width: 100px) {
+  body {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .App {
+    max-width: 100%;
+    padding: 0 5px;
+  }
+}
